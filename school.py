@@ -99,7 +99,7 @@ if "school_id" not in st.session_state and "is_super" not in st.session_state:
                 else:
                     st.session_state.school_id=row["id"]; st.session_state.school_name=row["school_name"]; st.session_state.expiry=row["expiry_date"]; st.rerun()
             else: st.error("Wrong Code/Password. Demo: RATO01 / 1234")
-        st.info("Demo: **RATO01 / 1234** | **LARK02 / 5678**")
+        # st.info("Demo: **RATO01 / 1234** | **LARK02 / 5678**")
     with tab2:
         u=st.text_input("Admin Username"); p=st.text_input("Admin Password", type="password")
         if st.button("Login Super Admin"):
